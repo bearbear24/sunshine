@@ -10,4 +10,8 @@
     <string name="perf_location_label">Location</string>
     <string name="perf_location_key" translatable="false">location</string>
     <string name="perf_location_default_value" translatable="false">94043</string>
+
+    <string name="perf_units_label">Temperature Units</string>
+    <string name="perf_units_key" translatable="false">units</string>
+    <string name="perf_unis_default_value" translatable="false">Metric</string>
 </resources>

@@ -39,6 +39,7 @@ public class SettingsActivity extends ActionBarActivity {
             PreferenceManager.setDefaultValues(getActivity(), R.xml.pref_general, false);
             addPreferencesFromResource(R.xml.pref_general);
             bindPreferenceSummaryToValue(findPreference(getString(R.string.perf_location_key)));
+            bindPreferenceSummaryToValue(findPreference(getString(R.string.perf_units_key)));
         }
 
         /**

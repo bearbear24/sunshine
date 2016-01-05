@@ -9,5 +9,12 @@
         android:summary="@string/perf_location_default_value"
         android:inputType="text"></EditTextPreference>
 
+    <ListPreference
+        android:key="@string/perf_units_key"
+        android:title="@string/perf_units_label"
+        android:defaultValue="@string/perf_unis_default_value"
+        android:summary="@string/perf_unis_default_value"
+        android:entries="@array/temperature_units_key"
+        android:entryValues="@array/temperature_units_values"></ListPreference>
 
 </PreferenceScreen>
