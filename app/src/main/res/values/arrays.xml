@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array  translatable="false"  name="temperature_units_key">
-        <item translatable="false">C</item>
-        <item translatable="false" >F</item>
+        <item translatable="false">Metric</item>
+        <item translatable="false">Imperial</item>
     </string-array>
 
     <string-array  translatable="false"  name="temperature_units_values">
-        <item translatable="false">C</item>
-        <item translatable="false">F</item>
+        <item translatable="false">Celsius</item>
+        <item translatable="false">Imperial</item>
     </string-array>
 </resources>

@@ -78,7 +78,9 @@ public class ForecastFragment extends Fragment {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
         String zipCode = prefs.getString(getString(R.string.perf_location_key),
                 getString(R.string.perf_location_default_value));
-        new ForecastFetcher().execute(zipCode);
+        String units = prefs.getString(getString(R.string.perf_units_key),
+                getString(R.string.perf_unis_default_value));
+        new ForecastFetcher().execute(zipCode, units);
     }
 
     @Override
@@ -140,7 +142,7 @@ public class ForecastFragment extends Fragment {
                     .appendPath("daily")
                     .appendQueryParameter("q", urls[0])
                     .appendQueryParameter("mode", "json")
-                    .appendQueryParameter("units", "metric")
+                    .appendQueryParameter("units", urls[1])
                     .appendQueryParameter("cnt", "7")
                     .appendQueryParameter("appid", "2de143494c0b295cca9337e1e96b00e0");
             try {

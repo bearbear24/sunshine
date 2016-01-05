@@ -14,4 +14,5 @@
     <string name="perf_units_label">Temperature Units</string>
     <string name="perf_units_key" translatable="false">units</string>
     <string name="perf_unis_default_value" translatable="false">Metric</string>
+    <string name="setting_location">Map Location</string>
 </resources>
