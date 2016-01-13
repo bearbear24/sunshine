@@ -142,9 +142,10 @@ public class ForecastFragment extends Fragment {
                     .appendPath("daily")
                     .appendQueryParameter("q", urls[0])
                     .appendQueryParameter("mode", "json")
-                    .appendQueryParameter("units", urls[1])
+                    .appendQueryParameter("units", "metric")
                     .appendQueryParameter("cnt", "7")
-                    .appendQueryParameter("appid", "2de143494c0b295cca9337e1e96b00e0");
+                    .appendQueryParameter("appid", "2de143494c0b295cca9337e1e96b00e0")
+                    .appendQueryParameter("APPID", BuildConfig.OPEN_WEATHER_MAP_API_KEY);
             try {
                 // Construct the URL for the OpenWeatherMap query
                 // Possible parameters are available at OWM's forecast API page, at
