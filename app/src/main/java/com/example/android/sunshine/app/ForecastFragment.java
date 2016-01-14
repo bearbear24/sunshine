@@ -42,6 +42,7 @@ public class ForecastFragment extends Fragment {
             ForecastFragment.class.getSimpleName();
 
     ArrayAdapter<String> adapter;
+    FetchWeatherTask task;
 
     public ForecastFragment() {
     }
@@ -80,7 +81,8 @@ public class ForecastFragment extends Fragment {
                 getString(R.string.perf_location_default_value));
         String units = prefs.getString(getString(R.string.perf_units_key),
                 getString(R.string.perf_unis_default_value));
-        new ForecastFetcher().execute(zipCode, units);
+        task = new FetchWeatherTask(getActivity(), adapter);
+        task.execute(zipCode, units);
     }
 
     @Override

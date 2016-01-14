@@ -6,7 +6,7 @@
     </string-array>
 
     <string-array  translatable="false"  name="temperature_units_values">
-        <item translatable="false">Celsius</item>
+        <item translatable="false">Metric</item>
         <item translatable="false">Imperial</item>
     </string-array>
 </resources>
