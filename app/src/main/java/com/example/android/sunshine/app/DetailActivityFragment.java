@@ -41,7 +41,7 @@ public class DetailActivityFragment extends Fragment {
         Intent intent = getActivity().getIntent();
         String msg = intent.getStringExtra(Intent.EXTRA_TEXT);
         Log.v(LOG_CLASS, msg);
-        TextView textView = (TextView) rootView.findViewById(R.id.detail_view);
+        TextView textView = (TextView) rootView.findViewById(R.id.detail_text);
         textView.setText(msg);
         return rootView;
     }
