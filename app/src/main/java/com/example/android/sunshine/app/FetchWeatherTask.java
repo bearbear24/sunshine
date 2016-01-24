@@ -259,7 +259,7 @@ public class FetchWeatherTask extends AsyncTask<String, Void, Void> {
                     .appendQueryParameter(QUERY_PARAM, params[0])
                     .appendQueryParameter(FORMAT_PARAM, format)
                     .appendQueryParameter(UNITS_PARAM, units)
-                    .appendQueryParameter("appid", "2de143494c0b295cca9337e1e96b00e0")
+                    .appendQueryParameter("appid", "4e461f97acd02215aad5a0ef123e4cf7")
                     .appendQueryParameter(DAYS_PARAM, Integer.toString(numDays))
                     .build();
 
