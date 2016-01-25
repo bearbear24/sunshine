@@ -23,6 +23,17 @@ import java.text.DateFormat;
 import java.util.Date;
 
 public class Utility {
+
+    static String formatTemperature(Context context, double temperature, boolean isMetric) {
+        double temp;
+        if ( !isMetric ) {
+            temp = 9*temperature/5+32;
+        } else {
+            temp = temperature;
+        }
+        return context.getString(R.string.format_temperature, temp);
+    }
+
     public static String getPreferredLocation(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         return prefs.getString(context.getString(R.string.perf_location_key),
